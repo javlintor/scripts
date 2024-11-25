@@ -44,6 +44,9 @@ tmux select-pane -t "$SESSION_NAME:0.0"
 # Execute the :Ex command in nvim
 tmux send-keys -t "$SESSION_NAME:0.0" ":Ex" C-m
 
+tmux new-window -d -n "lazygit" "lazygit"
+
 # Attach to the tmux session
 tmux attach-session -t "$SESSION_NAME"
+
 
